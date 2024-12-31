@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>療程目錄</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>預設訊息目錄表</h1>
+    </header>
+    <main>
+        <div id="main-menu">
+            <!-- 19 Major Procedures -->
+            <button class="procedure-button" data-procedure="P">P假牙</button>
+            <button class="procedure-button" data-procedure="CLS">CLS牙齦整形術</button>
+            <button class="procedure-button" data-procedure="I">I植牙</button>
+            <button class="procedure-button" data-procedure="F">F追縱回診</button>
+            <button class="procedure-button" data-procedure="OSA">OSA呼吸中止</button>
+            <button class="procedure-button" data-procedure="MRC">MRC</button>
+            <button class="procedure-button" data-procedure="W">W牙齒美白</button>
+            <button class="procedure-button" data-procedure="A">A潔牙泡泡</button>
+            <button class="procedure-button" data-procedure="E">E拔牙</button>
+            <button class="procedure-button" data-procedure="R">R提醒及注意事項</button>
+            <button class="procedure-button" data-procedure="PE">PE牙周</button>
+            <button class="procedure-button" data-procedure="IA">IA隱型矯正</button>
+            <button class="procedure-button" data-procedure="M5">M5費用</button>
+            <button class="procedure-button" data-procedure="ORTHO">ORTHO傳統矯正</button>
+            <button class="procedure-button" data-procedure="ENDO">ENDO顯微根管</button>
+            <button class="procedure-button" data-procedure="IM">IM國際醫療</button>
+            <button class="procedure-button" data-procedure="NP">NP新患者</button>
+            <button class="procedure-button" data-procedure="others">其他</button>
+            <button class="procedure-button" data-procedure="QA">魔法兒童矯正QA</button>
+        </div>
+
+        <div id="sub-menu" style="display: none;">
+            <h2 id="procedure-title"></h2>
+            <button class="sub-button" data-stage="before">療程前</button>
+            <button class="sub-button" data-stage="during">療程中</button>
+            <button class="sub-button" data-stage="after">療程後</button>
+        </div>
+
+        <div id="content-display" style="display: none;">
+            <h3 id="stage-title"></h3>
+            <ul id="content-list"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
